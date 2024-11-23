@@ -1,13 +1,9 @@
 export default {
-  title: `Astro Minimal Starter`,
-  description: `This is an example blog made with Astro.`,
-  url: `https://astro-minimal-starter.netlify.app`, // No trailing slash!
+  title: `Dabble Product Co.`,
+  description: `Dabble Product Co. is a product design studio building products for those who like to dabble.`,
+  url: `https://dabble.fyi`, // No trailing slash!
   // JSON LD
-  name: `Example`,
-  // Facebook URL
-  facebookURL: `https://facebook.com`,
+  name: `Dabble Product Co., LLC`,
   // Twitter URL
-  twitterURL: `https://twitter.com/jaydanurwin`,
-  // Instagram URL
-  instagramURL: `https://instagram.com/jaydanurwin`,
+  twitterURL: `https://x.com/dabbleproductco`
 };

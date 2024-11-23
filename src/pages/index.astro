@@ -1,44 +1,33 @@
 ---
 import Layout from "../layouts/Base.astro";
 import Container from "../components/Container.astro";
+import Link from "../components/Link.astro";
+import Button from "../components/Button.astro";
+import settings from "../data/settings";
+
+const title = settings.title;
+const description = settings.description;
 
 const seo = {
-  title: "Astro Minimal Starter",
-  description: "This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support."
-  }
+  title: title,
+  description: description
+}
 ---
 
 <Layout
   seo={seo}
 >
-  <Container>
-    <h1>Astro Minimal Starter</h1>
-    <p>
-      If you haven't heard about <a
-        href="https://astro.build"
-        target="_blank"
-        rel="noopener noreferrer">Astro</a
-      > yet you're missing out. This starter repo gives you a blog website with posts
-      written in Markdown, all powered by Astro.
-    </p>
-
-    <p>
-      Don't be fooled by the simplicity of this starter either. With excellent
-      SEO built in, Astro's excellent developer environment, and performance
-      best practices you're getting one of the best foundations for a personal
-      blog with posts written in markdown. The reason for making such a bare
-      bones starter in terms of styles is that it has what you need out of the
-      box for SEO and site structure but it makes no assumptions about how you
-      want it look and behave.
-    </p>
-
-    <p>
-      Sometimes starters can feel like they are giving us way too much and
-      you'll spend a day picking apart half of the code to get to the setup you
-      actually wanted. Want to use vanilla CSS instead of Tailwind or Scss? No
-      problem!
-    </p>
-
-    <a href="/blog">Blog →</a>
+  <Container class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center mt-48 space-y-8">
+      <h1 class="text-4xl font-bold text-center">Creating software for makers</h1>
+      <p class="text-lg text-center text-neutral-600 dark:text-neutral-400">
+        <Link href="/">{title}</Link> is a Brooklyn-based product studio building apps to help people explore, create, and share creative work.
+      </p>
+      <p class="text-lg text-center text-neutral-600 dark:text-neutral-400">
+        Currently dabbling on our first product – coming in 2025.
+      </p>
+      <Button href="mailto:mail@dabble.fyi">Get in touch</Button>
+    </div>
+    
   </Container>
 </Layout>
