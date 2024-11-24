@@ -1,15 +1,12 @@
-import { defineConfig } from 'astro/config'; // import lit from '@astrojs/lit';
-
-import sitemap from '@astrojs/sitemap';
+import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
-
 import netlify from '@astrojs/netlify';
+import mdx from '@astrojs/mdx';
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://dabble.fyi/",
-  integrations: [sitemap(), tailwind()],
+  integrations: [tailwind(), mdx()],
   output: 'server',
   adapter: netlify(),
 });

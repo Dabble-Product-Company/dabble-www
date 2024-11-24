@@ -17,14 +17,17 @@ const seo = {
 <Layout
   seo={seo}
 >
-  <Container class="flex flex-col items-center justify-center">
-    <div class="flex flex-col items-center justify-center mt-48 space-y-8">
-      <h1 class="text-4xl font-bold text-center">Making software for makers</h1>
-      <p class="text-lg text-center text-neutral-600 dark:text-neutral-400">
-        <Link href="/">{title}</Link> is a Brooklyn-based product studio building apps to help people explore, create, and share creative work.
+  <Container class="flex flex-col items-start">
+    <div class="flex flex-col items-start space-y-8">
+      <div class="w-16 h-16 overflow-hidden rounded-full">
+        <img class="object-contain" src="/logo.png" alt="Dabble Logo" />
+      </div>
+      <h1 class="text-3xl text-left font-display md:text-4xl ">Software for people making things</h1>
+      <p class="text-lg text-left text-neutral-600 dark:text-neutral-400">
+        <Link href="/">{title}</Link> is a Brooklyn-based product studio building apps that help people explore, create, and share things they make.
       </p>
-      <p class="text-lg text-center text-neutral-600 dark:text-neutral-400">
-        Our first app, <Link href="https://bobbin.app">Bobbin</Link>, launches in 2025.
+      <p class="text-lg text-left text-neutral-600 dark:text-neutral-400">
+        Coming Soon:<br/> <Link href="https://bobbin.app">Bobbin</Link>, an app for sewists
       </p>
       <Button href="mailto:mail@dabble.fyi">Get in touch</Button>
     </div>
