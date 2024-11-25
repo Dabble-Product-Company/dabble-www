@@ -15,7 +15,7 @@ const { seo } = Astro.props;
     <BaseHead {...seo} />
     <slot name="head-bottom" />
   </head>
-  <body class="flex flex-col max-w-2xl mx-auto antialiased prose dark:prose-invert font-monospace prose-neutral h-dvh bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+  <body class="flex flex-col max-w-2xl mx-auto antialiased font-monospace h-dvh bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
     <slot name="header" />
     <main class="grow">
       <slot />

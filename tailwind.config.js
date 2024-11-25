@@ -6,16 +6,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['cofo-gothic-variable',  
+        display: ['scale-variable',
           {
-            fontVariationSettings: `"wght" 100`,
+            fontVariationSettings: `"wdth" 110, "wght" 400`,
           },
           'sans-serif',
         ],
-        monospace: ['cofo-sans-mono-variable', 'monospace'],
+        monospace: ['input-mono', 'monospace'],
       },
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
+        'spin-slow': 'spin 20s linear infinite',
       },
     },
   },
