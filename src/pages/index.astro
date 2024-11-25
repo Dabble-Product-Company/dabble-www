@@ -19,12 +19,14 @@ const seo = {
 >
   <Container class="flex flex-col items-start">
     <div class="flex flex-col items-start space-y-8">
-      <div class="w-16 h-16 p-0 m-0 overflow-hidden rounded-full">
-        <img class="object-contain p-0 m-0" src="/logo.png" alt="Dabble Logo" />
+      <div class="relative w-16 h-16 p-0 m-0 overflow-hidden rounded-full">
+
+        <img class="absolute inset-0 z-0 p-0 m-0 animate-spin-slow" src="/dabble-bg.png" alt="Dabble Logo" />
+        <img class="relative z-10 object-contain p-0 m-0" src="/dabble-clear.png" alt="Dabble Logo" />
       </div>
-      <h1 class="text-2xl md:text-4xl font-display">Software for people making things</h1>
+      <h1 class="text-4xl font-black md:text-6xl font-display">Apps that help creative people do their thing</h1>
       <article class="prose-lg">
-        <p><Link href="/">{title}</Link> is a product studio building apps that inspire and empower creative people to do their thing.</p>
+        <p><Link href="/">{title}</Link> is a product studio building software that inspires and empowers creative people to do their thing.</p>
         <p>Coming Soon: <Link href="https://bobbin.app">Bobbin</Link>, an app for sewists</p>
       </article>
       <Button href="mailto:mail@dabble.fyi">Get in touch</Button>
