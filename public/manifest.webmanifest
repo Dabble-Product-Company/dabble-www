@@ -1,9 +1,9 @@
 {
-  "name": null,
-  "short_name": null,
-  "description": null,
+  "name": "Dabble Product Company",
+  "short_name": "Dabble",
+  "description": "Dabble is a product studio building experiences that inspire, empower, and amplify creative expression.",
   "dir": "auto",
-  "lang": "en-GB",
+  "lang": "en-US",
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",
