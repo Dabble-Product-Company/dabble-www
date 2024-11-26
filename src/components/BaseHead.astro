@@ -13,7 +13,7 @@ export interface Props {
 const title = Astro.props.title || settings.title;
 const description = Astro.props.description || settings.description;
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
-const image = new URL(Astro.props.image || './social.png', Astro.site);
+const image = new URL(Astro.props.image || './favicon.svg', Astro.site);
 ---
 
 <meta charset="utf-8" />
@@ -30,6 +30,8 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <link rel="alternate" type="application/rss+xml" title={`${settings.name} Blog`} href={`${settings.url}/feed/blog.xml`}/>
 <!-- Canonical -->
 <link rel="canonical" href={canonicalURL}>
+<!-- Favicon -->
+<link rel="icon" href={image} type="image/svg+xml">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
