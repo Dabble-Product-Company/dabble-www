@@ -28,6 +28,11 @@ module.exports = {
           'Inter',
           'sans-serif',
         ],
+        'display-cond': ['scale-variable',
+          {
+            fontVariationSettings: `"wdth" 75, "wght" 500`,
+          },
+        ],
         mono: ['input-mono',
           'Georgia',
           'serif',
