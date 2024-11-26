@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Base.astro";
+import Container from "../components/Container.astro";
+import Link from "../components/Link.astro";
+import Logo from "../components/Logo.astro";
+import settings from "../data/settings";
+
+const title = settings.title;
+const description = settings.description;
+
+const seo = {
+  title: title,
+  description: description
+}
+---
+
+<Layout
+  seo={seo}
+>
+  <Container>
+    
+    <div class="relative flex flex-col w-full space-y-8 md:space-y-12">
+      <div class="flex flex-col w-full gap-4 m-0 mb-8">
+        <Logo />
+        
+      </div>
+      
+      <h1 class="w-full m-auto text-5xl tracking-tight font-display leading-tighter md:leading-tighter md:text-7xl">For the creative<br> in all of us</h1>
+      
+      <article class="prose-base">
+        <p><Link href="/">{title}</Link> is a product studio building experiences that inspire, empower, and amplify creative expression.</p>
+        <p>Our mission is to make it easier for everyone to pursue their interests — whether you're a beginner, a professional, or you just like to dabble.</p>
+      </article>
+      <hr class="border"/>
+      <article class="space-y-4">
+        <h4 class="p-0 m-0 text-sm">Coming Soon</h4>
+        <p>🧵 <Link href="https://bobbin.app" external={true}>Bobbin</Link>: a mobile app for sewists</p>
+      </article>
+    </div>
+
+  </Container>
+</Layout>
