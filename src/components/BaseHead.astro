@@ -31,9 +31,11 @@ const image = new URL(Astro.props.image || '/social.png', Astro.site);
 <!-- Canonical -->
 <link rel="canonical" href={canonicalURL}>
 <!-- Favicon -->
-<link rel="icon" href="../../favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="../../apple-touch-icon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" sizes="96x96" type="image/png">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="../../favicon.ico">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="../../manifest.webmanifest">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
