@@ -23,7 +23,7 @@ module.exports = {
       fontFamily: {
         display: ['scale-variable',
           {
-            fontVariationSettings: `"wdth" 110, "wght" 700`,
+            fontVariationSettings: `"wdth" 125, "wght" 800`,
           },
           'Inter',
           'sans-serif',
