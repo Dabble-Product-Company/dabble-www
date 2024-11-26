@@ -5,11 +5,12 @@
 :root {
   --container-width: 960px;
   --container-padding: 1rem;
+  overscroll-behavior: none;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inconsolata", monospace;
+  font-family: "new-kansas", Georgia, serif;
 }
