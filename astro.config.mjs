@@ -21,8 +21,8 @@ export default defineConfig({
       // display: "standalone",
       // orientation: "any",
       // start_url: "/?homescreen=1",
-      background: "#fff",
-      theme_color: "#fff",
+      // background: "#fff",
+      // theme_color: "#fff",
 
       faviconsDarkMode: false, // default `true`, Make favicon compatible with light and dark modes
       
