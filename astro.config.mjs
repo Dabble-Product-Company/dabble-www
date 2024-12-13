@@ -4,12 +4,18 @@ import tailwind from "@astrojs/tailwind";
 import netlify from '@astrojs/netlify';
 import mdx from '@astrojs/mdx';
 import favicons from 'astro-favicons';
+import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   site: "https://dabble.fyi/",
   integrations: [
     tailwind(), 
     mdx(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
     favicons({
       masterPicture: "./favicon.png",
       emitAssets: true,
