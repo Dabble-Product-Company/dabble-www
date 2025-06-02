@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Base.astro";
+import Container from "../components/Container.astro";
+import Link from "../components/Link.astro";
+import Logo from "../components/Logo.astro";
+import settings from "../data/settings";
+
+const title = settings.title;
+const description = settings.description;
+
+const seo = {
+  title: title,
+  description: description
+}
+---
+
+<Layout
+  seo={seo}
+>
+  <Container>
+    
+    <div class="relative flex flex-col w-full space-y-8 md:space-y-12">
+      <div class="flex flex-col w-full gap-4 m-0 mb-8">
+        <Logo />
+        
+      </div>
+      
+      <h1 class="w-full m-auto text-5xl tracking-tight font-display leading-tighter md:leading-tighter md:text-7xl text-balance">For the creative in everyone</h1>
+      
+      <article class="prose-base">
+        <p><Link href="/">{title}</Link> is a product studio building experiences that inspire, empower, and amplify creative expression.</p>
+        <p>Our mission is to make it easier for everyone to pursue their interests — whether you're a beginner, a professional, or you just like to dabble.</p>
+      </article>
+      <hr class="border"/>
+      <article class="space-y-4">
+        <h4 class="p-0 m-0 text-sm font-medium">Now Available</h4>
+        <div class="flex flex-row items-center gap-4">
+          <img class="w-24 h-24 rounded-3xl" src="../assets/bobbin.png" alt="Bobbin: Sewing Organizer" />
+          <div class="flex flex-col !gap-0 ">
+            <h3 class="p-0 m-0">Bobbin: Sewing Organizer</h3>
+            <h5 class="font-medium"><Link href="https://bobbin.app">bobbin.app</Link> • <Link href="https://apps.apple.com/us/app/bobbin-sewing-organizer/id6744337422?platform=iphone" external={true}>App Store</Link></h5>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </Container>
+</Layout>
