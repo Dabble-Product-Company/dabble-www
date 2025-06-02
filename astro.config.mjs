@@ -17,7 +17,7 @@ export default defineConfig({
       },
     }),
     favicons({
-      masterPicture: "./favicon.png",
+      masterPicture: "./public/favicon.svg",
       emitAssets: true,
       appName: "Dabble Product Company",
       appShortName: "Dabble",
